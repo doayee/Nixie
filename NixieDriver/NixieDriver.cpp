@@ -1155,8 +1155,7 @@ void backlight::isr()
  *
  * Returns: None.
  *
- * Desc:	This is the ISR routine. Updates the colours on the backlight and checks
- * 			the arrayIndex.
+ * Desc:	Stops the fade. Detaches the ISR and fades to the colour specified.
  ************************************************************************************/
 void backlight::stopFade(int stopColour[3], int duration)
 {
